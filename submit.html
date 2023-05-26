@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Add your CSS styles here */
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #FFB74D;
+    }
+
+    .submit {
+      background-color: #FFB74D;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  body {
+    background-color: yellow;
+  }
+  <div class="container">
+    <h1>Feedback Section</h1>
+    <form name="registration" class="registration-form" onsubmit="return formValidation()">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" name="name" id="name" placeholder="Your name"></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="text" name="email" id="email" placeholder="Your email"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" name="password" id="password"></td>
+        </tr>
+        <tr>
+          <td><label for="phoneNumber">Phone Number:</label></td>
+          <td><input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Your phone number"></td>
+        </tr>
+
+        
+        
+          <td><label for="about">Thoughts:</label></td>
+          <td><textarea name="about" id="about" placeholder="Tell us what you think!"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" class="submit" value="Submit"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</body>
+</html>

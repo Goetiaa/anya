@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Donut-tastic</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-color: #FFFAF0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Buy The Limited Edition Donuts!</h1>
+  </header>
+
+  <div id="product-container">
+    <div class="product">
+      <h2>Donuts to go</h2>
+      <p>$8.00</p>
+      <label for="quantity">Donut Code:</label>
+      <input type="number" id="quantity" value="0">
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <div id="cart">
+    <h2>Cart</h2>
+    <table id="cart-items">
+      <tr>
+        <th>Quantity  </th>
+        <th>  Code</th>
+        <th>  Price</th>
+      </tr>
+    </table>
+    <p id="total">Total: $0.00</p>
+    <h1>Order code that exceeds [8] will go to charity.<h1>
+  </div>
+
+  <div class="product">
+    <div class="product-item">
+        <img src="2.jpg" alt="Product1" class="product-image-fdisp" onclick="addToCart('2.jpg')">
+        <h2>Festive Box(6)</h2>
+        <p> $48</p>
+    </div>
+    <div class="product-item">
+        <img src="4.jpg" alt="Product2" class="product-image-fdisp" onclick="addToCart('4.jpg')">
+        <h2>Golden Muffins(7)</h2>
+        <p>$56</p>
+    </div>
+    <div class="product-item">
+        <img src="logo2.jpg" alt="Product3" class="product-image-fdisp" onclick="addToCart('logo2.jpg')">
+        <h2>Choco Duo(4)</h2>
+        <p>$32</p>
+    </div>
+    <div class="product-item">
+        <img src="8.jpg" alt="Product3" class="product-image-fdisp" onclick="addToCart('8.jpg')">
+        <h2>Coffee Combo(3)</h2>
+        <p>$24</p>
+    </div>
+    <div class="product-item">
+        <img src="6.jpg" alt="Product3" class="product-image-fdisp" onclick="addToCart('6.jpg')">
+        <h2>Event's Special(1)</h2>
+        <p>$8</p>
+    </div>
+  </div>
+   
+  <script src="script.js"></script>
+</body>
+</html>
